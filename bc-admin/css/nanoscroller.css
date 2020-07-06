@@ -1,0 +1,54 @@
+/** initial setup **/
+/*.main_container, */.box .scrollable {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+/*.main_container .content_container , */.box .scrollable .content_container{
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+}
+/*.main_container .content_container:focus,*/.box .scrollable .content_container:focus {
+  outline: thin dotted;
+}
+/*.main_container .content_container::-webkit-scrollbar,*/.box .scrollable .content_container::-webkit-scrollbar {
+  visibility: hidden;
+}
+.has-scrollbar .content_container::-webkit-scrollbar {
+  visibility: visible;
+}
+/*.main_container > .pane, */.box .scrollable > .pane {
+  background : rgba(0,0,0,.25);
+  position   : absolute;
+  width      : 5px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : .01; 
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;  
+  border-radius         : 5px;
+}
+/*.main_container > .pane > .slider, */.box .scrollable > .pane > .slider {
+  background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;  
+  border-radius         : 3px;
+}
+/*.main_container:hover > .pane, */.box .scrollable > .pane, .pane.active, .pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : 0.99;
+}

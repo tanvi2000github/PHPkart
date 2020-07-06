@@ -1,0 +1,5 @@
+<FilesMatch "\.(rar|zip)$">
+Order deny,allow
+Deny from all
+</FilesMatch>
+ErrorDocument 403 http://localhost/bootcommerce_test/content/plugins/dgoods/403_download.php

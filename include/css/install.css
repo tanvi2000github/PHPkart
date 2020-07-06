@@ -1,0 +1,168 @@
+html {
+ background: #F9F9F9;
+}
+body {
+  background: #FFF;
+  color: #333;
+  font-family: sans-serif;
+  margin: 2em auto;
+  padding: 1em 2em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #DFDFDF;
+  max-width: 700px;
+  font-size: 14px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 25px 0 20px;
+}
+p, li, dd, dt {
+  padding-bottom: 2px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 23px;
+  height: 24px;
+  margin: 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #F3F3F3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#F4F4F4));
+  background-image: -webkit-linear-gradient(top, #FEFEFE, #F4F4F4);
+  background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: -o-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: linear-gradient(to bottom, #FEFEFE, #F4F4F4);
+  border-color: #BBB;
+  color: #333;
+  text-shadow: 0 1px 0 #FFF;
+}
+.button.button-large {
+  height: 29px;
+  line-height: 28px;
+  padding: 0 12px;
+}
+.button:hover,
+.button:focus {
+	background: #f3f3f3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f3f3f3));
+	background-image: -webkit-linear-gradient(top, #fff, #f3f3f3);
+	background-image:    -moz-linear-gradient(top, #fff, #f3f3f3);
+	background-image:     -ms-linear-gradient(top, #fff, #f3f3f3);
+	background-image:      -o-linear-gradient(top, #fff, #f3f3f3);
+	background-image:   linear-gradient(to bottom, #fff, #f3f3f3);
+	border-color: #999;
+	color: #222;
+}
+
+.button:focus  {
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+.button:active {
+	outline: none;
+	background: #eee;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#fefefe));
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #fefefe);
+	background-image:    -moz-linear-gradient(top, #f4f4f4, #fefefe);
+	background-image:     -ms-linear-gradient(top, #f4f4f4, #fefefe);
+	background-image:      -o-linear-gradient(top, #f4f4f4, #fefefe);
+	background-image:   linear-gradient(to bottom, #f4f4f4, #fefefe);
+	border-color: #999;
+	color: #333;
+	text-shadow: 0 -1px 0 #fff;
+	-webkit-box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
+	box-shadow: inset 0 2px 5px -3px rgba( 0, 0, 0, 0.5 );
+}
+a {
+  color: #21759B;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration:underline;	
+}
+ul li {
+	margin-bottom: 10px;
+	font-size: 14px ;
+}
+code {
+	font-family: Consolas, Monaco, monospace;
+}
+.form-table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  width: 100%;
+}
+.form-table th {
+  font-size: 14px;
+  text-align: left;
+  padding: 16px 20px 10px 0;
+  border-bottom: 8px solid #FFF;
+  width: 140px;
+  vertical-align: top;
+}
+.form-table td {
+  margin-bottom: 9px;
+  padding: 10px 20px 10px 0;
+  border-bottom: 8px solid #FFF;
+  font-size: 14px;
+  vertical-align: top;
+}
+.form-table p {
+	margin: 4px 0 0 0;
+	font-size: 11px;
+}
+.step, th {
+  text-align: left;
+  padding: 0;
+}
+.form-table input[type=text], .form-table input[type=password] {
+  width: 206px;
+}
+.form-table input {
+  line-height: 20px;
+  font-size: 15px;
+  padding: 2px;
+  border: 1px #DFDFDF solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: sans-serif;
+}
+h1 {
+	border-bottom: 1px solid #dadada;
+	clear: both;
+	color: #666;
+	font: 24px Georgia, "Times New Roman", Times, serif;
+	margin: 30px 0 0 0;
+	padding: 0;
+	padding-bottom: 7px;
+}
+h2 {
+	border: 1px solid #dadada;
+	background:#dadada;
+	clear: both;
+	color: #333;
+	font: 14px Georgia, "Times New Roman", Times, serif;
+	margin: 30px 0 0 0;
+	padding: 0;
+	padding: 7px;
+}
+.message {
+border: 1px solid #E6DB55;
+padding: .3em .6em;
+margin: 5px 0 15px;
+background-color: #FFFFE0;
